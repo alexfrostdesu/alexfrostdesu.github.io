@@ -50,7 +50,7 @@ body {
   color: var(--color-primary);
   display: grid;
   font: 1em/1.5 Lato, sans-serif;
-  gap: 2em;
+  gap: 1.5em;
   grid-template-columns:
     [full-start]
     1fr
@@ -63,12 +63,14 @@ body {
     [full-end];
   grid-template-rows: auto [content] 0;
   margin-bottom: 4em;
+  margin-top: 0em;
 }
 
 body::before {
   content: '';
   grid-column: full;
   grid-row: content;
+  margin-top: 0em;
 }
 
 ol,
@@ -179,7 +181,7 @@ section {
 
 article > * + *,
 blockquote > * + * {
-  margin-top: 0.6em;
+  margin-top: 0.4em;
 }
 
 .stack {
@@ -194,7 +196,7 @@ blockquote > * + * {
 
 .grid-list {
   display: grid;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .spaced-list {
@@ -272,7 +274,7 @@ blockquote > * + * {
   </head>
   <body>
       <header class="masthead">
-          <img src="https://github.com/alexfrostdesu/alexfrostdesu.github.io/blob/a478e01bc9567b472675ccccbc94a7335192c145/IMG_0683.jpg" alt="">
+          <img src="./IMG_0683.jpg" alt="">
         <div>
             <h1>Matvey Loshakov</h1>
             <h2>Python Developer</h2>
@@ -290,12 +292,20 @@ blockquote > * + * {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
               <a href="https://linkedin.com/in/matvey-loshakov/">linkedin.com/in/matvey-loshakov</a>
             </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg>
+              <a href="https://www.google.com/maps/search/?api=1&query=berlin+germany">Berlin, Germany</a>
+            </li>
         </ul>
       </header>
         <section id="about">
           <h3>About</h3>
           <article>
             <p>Full-stack developer with 7+ years experience in various IT spheres, such as: programming, data analysis and database management. Perpetually learning new things and currently want to work as a Python software or a Full-stack developer and to be proud of the final product.</p>
+            <ul>
+                <li>Ready to relocate within Germany</li>
+                <li>Remote work preferable, at least an option of home office is a must</li>
+            </ul>
           </article>
         </section>
       <section id="work">
@@ -511,26 +521,26 @@ blockquote > * + * {
         <h3>Interests</h3>
         <div class="grid-list">
             <div>
-                <h4>Video games</h4>
-                <ul>
-                    <li>I was playing video games as long as I can remember myself.</li>
+                <h4>Formula 1</h4>
+                <ul class="tag-list">
+                    <li>Avid watcher of Formula 1, a fan for 20 years, have a blog about it.</li>
                 </ul>
             </div>
             <div>
-                <h4>Formula 1</h4>
-                <ul>
-                    <li>Avid watcher of Formula 1, been a fan for 20 years, have a blog about it.</li>
+                <h4>Video games</h4>
+                <ul class="tag-list">
+                    <li>Playing video games as long as I can remember myself.</li>
                 </ul>
             </div>
             <div>
                 <h4>Cycling</h4>
-                <ul>
+                <ul class="tag-list">
                     <li>Enjoy riding a bike very much, use it as much as possible in the season.</li>
                 </ul>
             </div>
             <div>
                 <h4>Reading</h4>
-                <ul>
+                <ul class="tag-list">
                     <li>Read a lot, mostly Sci-Fi, Soc-Fi and PopSci.</li>
                 </ul>
             </div>
